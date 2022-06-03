@@ -1,0 +1,142 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        //colors basic
+        --first-basic-color: #FAF8FF;
+        --second-basic-color: #3B3B3B;
+
+        //colors personalized
+        --custom-first-color: #000061;
+
+    }
+
+    .dark__theme {
+        //colors basic
+        --first-basic-color: #3B3B3B;
+        --second-basic-color: #FAF8FF;
+
+        //colors personalized
+        --custom-first-color: #9CD3FF;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        //colors basic
+        --first-basic-color: #3B3B3B;
+        --second-basic-color: #FAF8FF;
+
+        //colors personalized
+        --custom-first-color: #9CD3FF;
+    }
+
+    .light__theme {
+        //colors basic
+        --first-basic-color: #FAF8FF;
+        --second-basic-color: #3B3B3B;
+
+        //colors personalized
+        --custom-first-color: #000061;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .home {
+        margin-top: 70px;
+        height: auto !important;
+
+        &__container {
+
+            &__row {
+                text-align: center;
+
+                .box__contact {
+                    justify-content: center;
+                }
+
+                .box__presentation{
+                    span:nth-of-type(3) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        height: auto !important;
+
+        &__container__row {
+            text-align: center;
+
+            &__title {
+                padding: 1rem 0 1rem 0;
+            }
+
+            &__second__total__box {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .skills {
+        height: auto !important;
+
+        li {
+            padding: 1rem 0.5rem !important;
+            margin-top: 1rem;
+        }
+    }
+
+    .projects {
+        height: auto !important;
+
+        .col {
+            display: flex;
+            justify-content: center;
+
+            .card__front__face,
+            .card__back__face {
+                width: 90% !important;
+                height: 96% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offcanvas-end {
+        width: 65%;
+        transition: transform .4s ease-in-out;
+    }
+}
+
+@media (min-width: 1400px) {
+    html{
+        font-size: 20px!important;
+
+        .container {
+            
+        }
+    }
+}
+
+@media (min-width: 1900px) {
+    html{
+        font-size: 24px!important;
+
+        .container {
+            max-width: 1700px;
+
+            .home__container__row{
+                width: 100%;
+            }
+
+            .projects__container__row__first__project__box{
+                height: 433px;
+
+               
+            }
+        }
+    }
+}

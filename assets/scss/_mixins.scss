@@ -1,0 +1,168 @@
+@mixin bar__hover__links {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 2rem;
+    width: 100%;
+    height: 0.14rem;
+    background-color: var(--custom-first-color);
+}
+
+@mixin bar__skills__style {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        li {
+            padding: 0 30px;
+
+            h3 {
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+                color: var(--second-basic-color);
+                font-size: $font-1r;
+                font-weight: $weight-g;
+                text-transform: uppercase;
+
+                i {
+                    font-size: $font-3r;
+                }
+            }
+
+            .bar {
+                height: 6px;
+                margin-top: 10px;
+                background: rgba(170, 170, 170, 0.74);
+                border-radius: 5px;
+
+                span {
+                    float: left;
+                    height: 6px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+@mixin global__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+
+    h2 {
+        width: auto;
+        border-bottom: 3px solid var(--custom-first-color);
+        font-size: $font-3r;
+        font-weight: $weight-gg;
+        text-align: center;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+}
+
+@mixin fixed__project__box__style {
+    position: relative;
+    perspective: 800px;
+    height: 280px;
+    color: var(--first-basic-color);
+    transform-style: preserve-3d;
+
+    &:hover>.card__front__face {
+        transform: rotateX(-180deg);
+    }
+
+    &:hover>.card__back__face {
+        transform: rotateX(0deg);
+    }
+}
+
+@mixin fixed__card__styles {
+    .card__back__face {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--second-basic-color);
+        text-align: center;
+        transform: rotateX(180deg);
+
+
+        button {
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            background: transparent;
+            border: 0;
+            border-radius: 0.5em;
+            overflow: hidden;
+
+            &,
+            div {
+                transition: 0.6s cubic-bezier(.16, 1, .3, 1);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+
+            &:hover div {
+                transform: translateY(-54px);
+            }
+
+            div {
+                width: 100%;
+                transform: translateY(0px);
+
+                &:nth-child(1) {
+                    background-color: $custom-fixed-first-color;
+                    border-top: 2px solid var(--first-basic-color);
+                    border-radius: 15px 15px 0 0;
+                }
+
+                &:nth-child(2) {
+                    background-color: $custom-fixed-second-color;
+                    border-radius: 0 0 15px 15px;
+                    border-bottom: 2px solid var(--first-basic-color);
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 49px;
+                    padding: 0.75em 1.125em;
+                }
+
+                p {
+                    color: #ffffff;
+                    font-size: $font-1r;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .card__front__face,
+    .card__back__face {
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: rgb(13 109 252 / 40%) -5px 5px,
+            rgb(13 109 252 / 30%) -10px 10px,
+            rgb(13 109 252 / 20%) -15px 15px,
+            rgb(13 109 252 / 10%) -20px 20px,
+            rgb(13 109 252 / 5%) -25px 25px;
+        backface-visibility: hidden;
+        transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+    }
+}

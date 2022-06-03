@@ -1,0 +1,112 @@
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+
+    body {
+        color: var(--second-basic-color);
+        background-color: var(--first-basic-color);
+        font-family: 'Roboto Serif', serif;
+        font-weight: bold;
+
+        a {
+            color: var(--second-basic-color)!important;
+        }
+
+        .first__custom__font{
+            font-family: 'Birthstone Bounce', cursive;
+            font-size: $font-2r;
+        }
+    }
+}
+
+//BUTTON DARK MODE CONFIG
+.button__theme {
+    position: fixed;
+    top: 90px;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    color: $second-fixed-base-color;
+    background-color: $first-fixed-base-color;
+    border: 2px solid $second-fixed-base-color;
+    border-radius: 40px;
+    z-index: 1000;
+
+        i{
+            font-size: $font-1_5r;
+    }
+}
+
+.dark__mode__on {
+    display: block!important;
+}
+
+.dark__mode__off {
+    display: none!important;
+}
+
+.light__mode__on {
+    display: block!important;
+}
+
+.light__mode__off {
+    display: none!important;
+}
+
+.display__on{
+    display: block!important;
+}
+
+.display__off{
+    display: none;
+}
+
+//BUTTON SCROLL SMOOTH
+
+.box__button__scroll__progress__bar{
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    display: none;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: grid;
+    place-items: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    color: $second-fixed-base-color;
+    background-color: $first-fixed-base-color;
+    border-radius: 50%;
+    font-size: $font-1_5r;
+}
+
+//SCROLLBAR STYLE
+
+// Firefox
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--first-basic-color);;
+}
+
+// Chrome, Edge, and Safari
+*::-webkit-scrollbar {
+    width: 18px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--first-basic-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--second-basic-color);
+    border: 5px solid var(--first-basic-color);
+    border-radius: 10px;
+}

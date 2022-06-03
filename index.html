@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--===== TAGS META =====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, JavaScript, SASS, BOOTSTRAP">
+    <meta name="description" content="Página principal do portfólio Victor ozores">
+    <meta name="author" content="Victor Ozores">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
+
+    <!--===== FONTS =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600;8..144,700&display=swap"
+        rel="stylesheet">
+
+    <!--===== OPERATIONS BOOTSTRAP =====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--===== MAIN STYLE =====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--===== ICONS FONTAWESOME =====-->
+    <script src="https://kit.fontawesome.com/266eff52cf.js" crossorigin="anonymous"></script>
+
+    <!--===== ANIMATIONS TYPING  TEXT =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!--===== ANIMATIONS COUNTER BAR =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.js"></script>
+
+    <!--===== PAG TITLE =====-->
+    <title>Victor Amorim</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand first__custom__font" alt="Logo do Site" title="Logo do Site" href="#"
+                    translate="no">Victor</a>
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" alt="Botão Abrir menu"
+                    title="Botão Abrir menu">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" translate="no">Menu</h5>
+                        <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"
+                            alt="Botão Fechar menu" title="Botão Fechar menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body nav-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" translate="no" alt="Início" title="Início"
+                                    href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" alt="Sobre Victor" title="Sobre Victor" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" alt="Habilidades" title="Habilidades" href="#skills">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" alt="Projetos" title="Projetos" href="#projects">Projetos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--===== MAIN =====-->
+    <main class="main">
+        <!--===== SECTION HOME =====-->
+        <section class="home" id="home">
+            <div class="container home__container">
+                <div class="row row-cols-1 row-cols-lg-2 home__container__row">
+                    <div class="col home__container__row__first__total__box">
+                        <div class="box__presentation">
+                            <h1>
+                                <span>Olá, meu nome é</span><br>
+                                <span>Victor Ozores</span><br>
+                                <span>Sou um </span>
+                                <span class="typing" translate="no"></span>
+                            </h1>
+                        </div>
+                        <div class="box__contact">
+                            <button class="btn__contact" alt="Fale comigo pelo WhatsApp"
+                                title="Fale comigo pelo WhatsApp">
+                                <span>Contate-me</span>
+                                <ul>
+                                    <li>
+                                        <a href="https://api.whatsapp.com/send?phone=5511994866027&text=Ol%C3%A1%2C%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es%20sobre%20voc%C3%AA."
+                                            alt="Fale comigo pelo WhatsApp" title="Fale comigo pelo WhatsApp">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </button>
+
+                            <button class="btn__cv__first__animation" alt="Baixar currículo" title="Baixar currículo">
+                                <div class="box__icon__cv">
+                                    <a href="#" alt="Baixar currículo" title="Baixar currículo">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </div>
+                                <span>cv</span>
+                            </button>
+                        </div>
+
+                        <div class="box__social">
+                            <a href="https://github.com/Victor-Ozores" alt="Repositório no GitHub"
+                                title="Repositório no GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/victor-ozores/" alt="Perfil no Linkedin"
+                                title="Perfil no Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col home__container__row__second__total__box">
+                        <div class="box__image">
+                            <img src="./assets/img/main-img-home.svg" class="img-fluid" alt="Imagem de Victor"
+                                title="Imagem de Victor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SECTION ABOUT-ME =====-->
+        <section class="about" id="about">
+            <div class="container about__container">
+                <div class="row row-cols-1 row-cols-lg-2 about__container__row">
+                    <div class="col-lg-12 about__container__row__title">
+                        <h2>Sobre Victor</h2>
+                    </div>
+
+                    <div class="col about__container__row__first__total__box">
+                        <div class="box__image">
+                            <img src="./assets/img/main-img-about.svg" class="img-fluid" alt="Imagem de Victor"
+                                title="Imagem de Victor">
+                        </div>
+                    </div>
+
+                    <div class="col about__container__row__second__total__box">
+                        <div class="box__information">
+                            <h2>Resumo de informações</h2>
+                            <p>
+                                Tenho 24 anos, venho da área de Web-Designer e
+                                atualmente estou estudando para me tornar um <span class="custom__color">Developer Front-End</span>. Fiquei fascinado com o que ele pode me oferecer para criar,
+                                otimizar e customizar, descomplicando problemas que os usuários possam ter em suas vidas
+                                com minhas criações, isso é mágico.
+                            </p>
+                            <button class="btn__cv__second__animation">
+                                <div class="textbox">
+                                    <i class="fa-solid fa-file-import"></i>Baixar CV</div>
+                                <div class="box__download__cv">
+                                    <a href="#" alt="Baixar currículo" title="Baixar currículo">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SECTION SKILLS =====-->
+        <section class="skills" id="skills">
+            <div class="container skills__container">
+                <div class="row row-cols-1 row-cols-lg-2 skills__container__row">
+                    <div class="col-lg-12 skills__container__row__title">
+                        <h2>Habilidades</h2>
+                    </div>
+
+                    <div class="col skills__container__row__box__primary">
+                        <p>Esses são os Fundamentos, Tecnologias e Frameworks, nos quais tenho maior afinidade e
+                            atuação.</p>
+                        <div class="box__image">
+                            <img src="./assets/img/main-img-skills.svg" class="img-fluid" alt="Foto de Tecnologia"
+                                title="Foto de Tecnologia">
+                        </div>
+                    </div>
+
+                    <div class="col skills__container__row__box__secondary">
+                        <ul>
+                            <li class="pt-0 scrollreveal__html">
+                                <h3><i class="fa-brands fa-html5"></i>HTML
+                                    <span class="counter">70%</span>
+                                </h3>
+                                <div class="bar">
+                                    <span class="html"></span>
+                                </div>
+                            </li>
+
+                            <li class="scrollreveal__css">
+                                <h3><i class="fa-brands fa-css3-alt"></i>css
+                                    <span class="counter">60%</span>
+                                </h3>
+                                <div class="bar">
+                                    <span class="css"></span>
+                                </div>
+                            </li>
+
+                            <li class="scrollreveal__js">
+                                <h3><i class="fa-brands fa-js-square"></i>JavaScript
+                                    <span class="counter">30%</span>
+                                </h3>
+                                <div class="bar">
+                                    <span class="js"></span>
+                                </div>
+                            </li>
+
+                            <li class="scrollreveal__sass">
+                                <h3 translate="no"><i class="fa-brands fa-sass"></i>sass
+                                    <span class="counter">90%</span>
+                                </h3>
+                                <div class="bar">
+                                    <span class="sass"></span>
+                                </div>
+                            </li>
+
+                            <li class="scrollreveal__bs">
+                                <h3><i class="fa-brands fa-bootstrap"></i>Bootstrap
+                                    <span class="counter">90%</span>
+                                </h3>
+                                <div class="bar">
+                                    <span class="bs"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SECTION PROJECTS =====-->
+        <section class="projects" id="projects">
+            <div class="container projects__container">
+                <div class="row row-cols-1 row-cols-lg-3 projects__container__row g-lg-5 gy-5">
+                    <div class="col-lg-12 projects__container__row__title">
+                        <h2>Projetos</h2>
+                    </div>
+
+                    <div class="col projects__container__row__first__project__box">
+                        <div class="card__front__face">
+                            <video autoplay muted loop>
+                                <source src="./assets/video/gif-area-projects.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card__back__face">
+                            <h3>---Em breve, estará disponível ---</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque ab odio dicta
+                                harum modi sed amet, quos hic porro ad illo repudiandae nostrum provident voluptatem!
+                                Cupiditate a labore beatae?
+                            </p>
+
+                            <button alt="Veja mais" title="Veja mais">
+                                <a href="#">
+                                    <div>
+                                        <span>
+                                            <p>Veja mais</p>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <p>Obrigado</p>
+                                            <p>:D</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="col projects__container__row__first__project__box">
+                        <div class="card__front__face">
+                            <video autoplay muted loop>
+                                <source src="./assets/video/gif-area-projects.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card__back__face">
+                            <h3>---Em breve, estará disponível---</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque ab odio dicta
+                                harum modi sed amet, quos hic porro ad illo repudiandae nostrum provident voluptatem!
+                                Cupiditate a labore beatae?
+                            </p>
+
+                            <button alt="Veja mais" title="Veja mais">
+                                <a href="#">
+                                    <div>
+                                        <span>
+                                            <p>Veja mais</p>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <p>Obrigado</p>
+                                            <p>:D</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col projects__container__row__first__project__box">
+                        <div class="card__front__face">
+                            <video autoplay muted loop>
+                                <source src="./assets/video/gif-area-projects.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card__back__face">
+                            <h3>---Em breve, estará disponível---</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque ab odio dicta
+                                harum modi sed amet, quos hic porro ad illo repudiandae nostrum provident voluptatem!
+                                Cupiditate a labore beatae?
+                            </p>
+
+                            <button alt="Veja mais" title="Veja mais">
+                                <a href="#">
+                                    <div>
+                                        <span>
+                                            <p>Veja mais</p>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <p>Obrigado</p>
+                                            <p>:D</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="row footer__container__row">
+                <div class="col total__box">
+                    <p class="first__custom__font" translate="no">Victor</p>
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5511994866027&text=Ol%C3%A1%2C%20gostaria%20de%20algumas%20informa%C3%A7%C3%B5es%20sobre%20voc%C3%AA."
+                            alt="Fale comigo pelo WhatsApp" title="Fale comigo pelo WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <p>© Victor. Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--===== SCRIPT SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== BOX BUTTON SCROLL SMOOTH =====-->
+    <div class="box__button__scroll__progress__bar" alt="Rolar a tela para cima" title="Rolar a tela para cima">
+        <span id="progress-value"><i class="fa-solid fa-arrow-turn-up"></i></span>
+    </div>
+
+    <!--===== BOX BUTTON DARK - MODE =====-->
+    <div class="box__button__dark__mode">
+        <button class="button__theme" alt="Mudança de tema" title="Mudança de tema">
+            <span class="dark__button"><i class="fa-solid fa-moon"></i></span>
+            <span class="light__button"><i class="fa-solid fa-lightbulb"></i></span>
+        </button>
+    </div>
+
+    <!--===== SCRIPT OPERATIONS BOOTSTRAP =====-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--===== SCRIPT MAIN JS =====-->
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+//Animation Scroll Me Mouse /Area (--home__container__row__third__total__box--)
+@keyframes ani-mouse {
+    0% {
+    opacity: 1;
+    top: 20%;
+    }
+    15% {
+    opacity: 1;
+    top: 50%;
+    }
+    50% {
+    opacity: 0;
+    top: 50%;
+    }
+    100% {
+    opacity: 0;
+    top: 29%;
+    }
+}
+
+//Animation Skills Bar Animation /Area(--skills__container__row__box__secondary--)
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;       
+    }
+}
+
+@keyframes sass{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;       
+    }
+}
+
+@keyframes bs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;       
+    }
+}
+
+//Animation Icon CV Area(--box__contact--)
+@keyframes fly-icon-cv {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+
+
+
